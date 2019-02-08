@@ -1,0 +1,58 @@
+function setup() {
+  createCanvas(550, 550);
+}
+
+function draw() {
+  background(125);
+}
+
+function draw() {
+  var leftLineX = 80
+  var rightLineX = 370
+  var topLineY = 160
+  var middleLineY = 320
+  var bottomLineY = 360
+
+  background(240);
+  noStroke();
+  strokeCap(SQUARE);
+  
+  // red square
+  fill(255,0,0);
+  rect(480,480,100,100);
+
+  // purple rectangle
+  fill(150, 0, 255);
+  rect(0, 400, 130, 230);
+
+  // blue square
+  fill(0, 0, 255);
+  rect(275, 0, 450, 270);
+
+  // yellow square move left and right
+  fill(255, 255, 55);
+  rect(mouseX, 320, 110, 75);
+
+  // big yellow square 2
+  fill(255, 255, 55);
+  rect(50, 60, 200, 255);
+  
+    // little yellow square in blue 
+  fill(255, 255, 55);
+  rect(375,100, 80, 80);
+
+  stroke(0);
+  strokeWeight(10);
+  line(50, 0, 50, 550); // left line
+  line(275, 0, 275, 550); // left line2
+  line(0, 320, 550, 320); // middle line
+  line(370, 320, 370, 400); // right
+
+  strokeWeight(15);
+  line(0, 400, 550, 400); // bottom
+  strokeWeight(15);
+  line(0, 475, 550, 475); // bottom 2
+
+  strokeWeight(20);
+  line(0, 160, 275, 160);
+}
