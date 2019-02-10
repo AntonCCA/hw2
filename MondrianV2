@@ -1,0 +1,70 @@
+  function setup() {
+  createCanvas(600, 600);
+}
+
+function draw() {
+  var leftLineX = 50;
+  var rightLineX = 550;
+  var topLineY = 300;
+  var middleLineY = 300;
+  var bottomLineY = 360;
+
+  background(240);
+  noStroke();
+  strokeCap(SQUARE);
+
+
+  fill(255, 0, 100, 100); // Red
+  rect(0, 0, 300, 300); // 
+  
+  fill(255, 255, 255); // white square
+  rect(mouseX,mouseY,100,100);
+  
+  fill(0, 120, 255); // Blue
+  rect(0, 300, 300, 300); // Smaller blue rectangle
+  
+    
+  fill(255, 255, 255); // white square
+  rect(mouseX,mouseY,175,175);
+
+  fill(255, 255, 0); // Yellow
+  rect(300, 300, 300, 300)
+  
+    
+  fill(255, 255, 255); // white square
+  rect(mouseX,mouseY,100,100);
+
+  fill(0, 250, 230); //  teal square
+  rect(300, 0, 300, 300);
+  
+    
+  fill(255, 255, 255); // white square
+  rect(mouseX,mouseY,250,230);
+
+
+
+  stroke(0); // Black
+  strokeWeight(10);
+  line(55, middleLineY, 300, 550); // middle left bottom
+  line(55, 305, 300, 55); // middle  left top
+  line(555, middleLineY, 300, 550); //middle right bottom
+  line(555, middleLineY, 300, 55); //middle right top
+
+  strokeWeight(10);
+  line(-10, 300, 300, 610); // bottom diagonal
+  strokeWeight(10);
+  line(610, 300, 300, 610); // bottom diagonal
+
+  strokeWeight(10);
+  line(-10, topLineY, 300, -5); // top diagonal
+  strokeWeight(10);
+  line(610, topLineY, 300, -5); // top diagonal
+
+  line(300, 600, 300, 00);
+
+  line(0, 300, 600, 300);
+
+  line(0, 0, 600, 600);
+
+  line(0, 600, 600, 0);
+}
